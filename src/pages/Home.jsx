@@ -56,7 +56,7 @@ function Home() {
             </div>
             <div className="impact-card">
               <div className="impact-number">2</div>
-              <div className="impact-label">State Divisions</div>
+              <div className="impact-label">State Branches</div>
             </div>
           </div>
         </div>
