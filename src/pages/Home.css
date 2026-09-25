@@ -319,6 +319,11 @@
   .hero-container {
     grid-template-columns: 1fr;
     gap: 2rem;
+    min-width: 0;
+  }
+
+  .hero-content {
+    min-width: 0;
   }
 
   .hero-content h1 {
@@ -343,7 +348,7 @@
 
   .hero {
     min-height: auto;
-    padding: 2.5rem 0;
+    padding: 2.5rem 1rem;
   }
 
   .mission,
