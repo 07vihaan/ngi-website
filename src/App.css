@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #ffffff;
+  color: #17212b;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+.app.dark-mode {
+  background: #101820;
+  color: #f4f7f8;
+}
+
+.app.dark-mode .navbar,
+.app.dark-mode .navbar-menu {
+  background: #ffffff;
+  border-color: #1a365d;
+}
+
+.app.dark-mode .navbar-logo,
+.app.dark-mode .navbar-menu a,
+.app.dark-mode .mobile-menu-toggle span {
+  color: #1a365d;
+}
+
+.app.dark-mode .theme-toggle {
+  background: #ffffff;
+  border-color: #1a365d;
+  color: #1a365d;
+}
+
+.app.dark-mode .theme-toggle:hover,
+.app.dark-mode .theme-toggle:focus-visible {
+  background: #1a365d;
+  color: #ffffff;
+}
+
+.app.dark-mode .home,
+.app.dark-mode .programs,
+.app.dark-mode .team,
+.app.dark-mode .mission,
+.app.dark-mode .what-we-do,
+.app.dark-mode .how-it-works,
+.app.dark-mode .leadership,
+.app.dark-mode .mission-vision {
+  background: #101820;
+}
+
+.app.dark-mode .impact,
+.app.dark-mode .what-we-teach,
+.app.dark-mode .registration,
+.app.dark-mode .team-about,
+.app.dark-mode .volunteer,
+.app.dark-mode .footer,
+.app.dark-mode .footer-bottom {
+  background: #18242e;
+}
+
+.app.dark-mode .team-header,
+.app.dark-mode .programs-header,
+.app.dark-mode .cta,
+.app.dark-mode .partnership-cta {
+  background: #263b49;
+}
+
+.app.dark-mode .hero,
+.app.dark-mode .past-locations,
+.app.dark-mode .lesson-details,
+.app.dark-mode .classes-info,
+.app.dark-mode .impact-card,
+.app.dark-mode .what-card,
+.app.dark-mode .subject-card,
+.app.dark-mode .program-card,
+.app.dark-mode .detail-item,
+.app.dark-mode .mission-card,
+.app.dark-mode .volunteer-form,
+.app.dark-mode .volunteer-details {
+  background: #202f3a;
+  border-color: #536776;
+  box-shadow: none;
+}
+
+.app.dark-mode h1,
+.app.dark-mode h2,
+.app.dark-mode h3,
+.app.dark-mode h4,
+.app.dark-mode .hero-content h1,
+.app.dark-mode .mission h2,
+.app.dark-mode .impact h2,
+.app.dark-mode .what-we-do h2,
+.app.dark-mode .what-card h3,
+.app.dark-mode .classes-info h3,
+.app.dark-mode .team-section-title,
+.app.dark-mode .leadership h2,
+.app.dark-mode .volunteer h2,
+.app.dark-mode .volunteer-info h3,
+.app.dark-mode .volunteer-form h3,
+.app.dark-mode .mission-card h3,
+.app.dark-mode .team-member h4,
+.app.dark-mode .program-card h3,
+.app.dark-mode .subject-card h3,
+.app.dark-mode .how-it-works h2,
+.app.dark-mode .what-we-teach h2,
+.app.dark-mode .registration h2,
+.app.dark-mode .past-locations h2,
+.app.dark-mode .footer-section h4 {
+  color: #f4f7f8;
+}
+
+.app.dark-mode p,
+.app.dark-mode .hero-description,
+.app.dark-mode .mission p,
+.app.dark-mode .what-card p,
+.app.dark-mode .classes-info p,
+.app.dark-mode .subject-card p,
+.app.dark-mode .step p,
+.app.dark-mode .program-description,
+.app.dark-mode .section-description,
+.app.dark-mode .past-locations > .container > p:first-of-type,
+.app.dark-mode .expansion-message,
+.app.dark-mode .about-text p,
+.app.dark-mode .volunteer-info p,
+.app.dark-mode .mission-card p,
+.app.dark-mode .footer-section p,
+.app.dark-mode .footer-section a {
+  color: #d6e0e5;
+}
+
+.app.dark-mode .program-location,
+.app.dark-mode .detail-label,
+.app.dark-mode .detail-value,
+.app.dark-mode .team-member .role,
+.app.dark-mode .location-tag,
+.app.dark-mode .footer-section a:hover {
+  color: #8ed7df;
+}
+
+.app.dark-mode .location-tag {
+  background: #202f3a;
+  border-color: #8ed7df;
+  box-shadow: none;
+}
+
+.app.dark-mode .footer-bottom {
+  border-color: #536776;
+}
+
+/* Keep the visual language square and quiet. */
+.app button,
+.app .btn,
+.app .impact-card,
+.app .what-card,
+.app .subject-card,
+.app .program-card,
+.app .lesson-details,
+.app .detail-item,
+.app .mission-card,
+.app .volunteer-form,
+.app .volunteer-details,
+.app .location-tag,
+.app .social-links a {
+  border-radius: 0;
+}
+
+.app * {
+  transition: none !important;
+}
+
+/* Container utility */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: #2d5a8c;
+}
+
+.text-muted {
+  color: #718096;
+}
+
+/* Animation utilities */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
+/* Scrollbar styling for better UX */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}
+
+/* Responsive containers */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .navbar,
+  .footer {
+    display: none;
+  }
+}
+
+/* Accessibility */
+.skip-to-main {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #2d5a8c;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-to-main:focus {
+  top: 0;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: more) {
+  .navbar {
+    border-bottom: 2px solid #1a365d;
+  }
+
+  .btn {
+    border-width: 2px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
