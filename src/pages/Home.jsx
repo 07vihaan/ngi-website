@@ -47,11 +47,11 @@ function Home() {
               <div className="impact-label">STEM Lessons</div>
             </div>
             <div className="impact-card">
-              <div className="impact-number">20+</div>
+              <div className="impact-number">50+</div>
               <div className="impact-label">Volunteer Educators</div>
             </div>
             <div className="impact-card">
-              <div className="impact-number">5</div>
+              <div className="impact-number">11</div>
               <div className="impact-label">Locations</div>
             </div>
             <div className="impact-card">
