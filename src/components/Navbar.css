@@ -148,8 +148,8 @@
     background-color: #ffffff;
     flex-direction: column;
     gap: 0;
-    padding: 1.5rem;
-    border-top: 1px solid #e2e8f0;
+    padding: 0 1.5rem;
+    border-top: 0 solid #e2e8f0;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
@@ -163,6 +163,8 @@
 
   .navbar-menu.active {
     max-height: 300px;
+    padding: 1.5rem;
+    border-top-width: 1px;
   }
 
   .navbar-menu li {
