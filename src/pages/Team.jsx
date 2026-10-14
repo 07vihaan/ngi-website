@@ -37,8 +37,8 @@ function Team() {
   ];
 
   const michiganTeam = [
-    { name: 'Aayush Paul', role: 'President', image: 'aayushpaul' },
-    { name: 'Ryan Fan', role: 'Vice President', image: 'ryanfan' },
+    { name: 'Aayush Paul', role: 'Co-Founder & President', image: 'aayushpaul' },
+    { name: 'Ryan Fan', role: 'Co-Founder & Vice President', image: 'ryanfan' },
     { name: 'Sophia Shinh', role: 'Director of STEM Education', image: 'sophiashinh' }
   ];
 
