@@ -1,17 +1,5 @@
 # NextGenInspires Website
 
-A modern, responsive 3-page website for NextGenInspires, a student-led STEM education nonprofit.
-
-## Features
-
-- ✨ Modern, minimalist design with professional aesthetic
-- 📱 Fully responsive (mobile, tablet, desktop)
-- 🚀 Built with React + Vite for optimal performance
-- 🎨 Clean color palette and typography
-- ♿ Accessible and SEO-friendly
-- 🔗 Working navigation across all pages
-- 📧 Contact form with validation
-
 ## Pages
 
 1. **Home** - Hero section, mission statement, impact statistics, and what we do
