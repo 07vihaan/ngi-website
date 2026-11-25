@@ -3,7 +3,7 @@ function MemberCard({ person, style }) {
     <div className="team-member reveal" style={style}>
       <div className="member-image-container">
         <img
-          src={`/images/${person.image}.jpg`}
+          src={person.src || `/images/${person.image}.jpg`}
           alt={person.name}
           className="member-image"
           loading="lazy"
