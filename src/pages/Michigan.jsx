@@ -39,7 +39,7 @@ const team = [
   { name: 'Aayush Paul', role: 'Co-Founder & President', image: 'aayushpaul' },
   { name: 'Ryan Fan', role: 'Co-Founder & Vice President', image: 'ryanfan' },
   { name: 'Sophia Shinh', role: 'Director of STEM Education', image: 'sophiashinh' },
-  { name: 'Adelaide VanderNaald', role: 'Director of Student Development', image: 'adelaidevandernaald' }
+  { name: 'Adelaide VanderNaald', role: 'Director of Student Development', image: 'adelaidevandernaald', src: '/images/1795579330912_0ADF11A8-A461-49B9-B504-77AF943BA79D.jpeg' }
 ];
 
 function Michigan() {
@@ -69,7 +69,7 @@ function Michigan() {
             </div>
           </div>
           <div className="framed-photo mi-hero-photo enter" style={{ animationDelay: '200ms' }}>
-            <img src="/images/michigan-class.jpg" alt="Two students watching their foam experiment erupt at a NextGenInspires Michigan class" />
+            <img src="/images/1795579249682_image.png" alt="Two students watching their foam experiment erupt at a NextGenInspires Michigan class" />
           </div>
         </div>
 
@@ -187,7 +187,7 @@ function Michigan() {
             {team.map((person, i) => (
               <div key={person.name} className="mi-member reveal" style={{ animationDelay: `${i * 70}ms` }}>
                 <div className="mi-member-photo">
-                  <img src={`/images/${person.image}.jpg`} alt={person.name} loading="lazy" />
+                  <img src={person.src || `/images/${person.image}.jpg`} alt={person.name} loading="lazy" />
                 </div>
                 <h3>{person.name}</h3>
                 <p>{person.role}</p>
