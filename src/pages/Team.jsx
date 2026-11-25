@@ -16,7 +16,7 @@ const michiganTeam = [
   { name: 'Aayush Paul', role: 'Co-Founder & President', image: 'aayushpaul' },
   { name: 'Ryan Fan', role: 'Co-Founder & Vice President', image: 'ryanfan' },
   { name: 'Sophia Shinh', role: 'Director of STEM Education', image: 'sophiashinh' },
-  { name: 'Adelaide VanderNaald', role: 'Director of Student Development', image: 'adelaidevandernaald' }
+  { name: 'Adelaide VanderNaald', role: 'Director of Student Development', image: 'adelaidevandernaald', src: '/images/1795579330912_0ADF11A8-A461-49B9-B504-77AF943BA79D.jpeg' }
 ];
 
 const founders = [
